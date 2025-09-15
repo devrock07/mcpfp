@@ -1,6 +1,6 @@
 import generatePfp from "$lib/rendering/generateProfile";
 import changeGradient from "$lib/rendering/gradient";
-import { Canvas } from "skia-canvas";
+import {createCanvas} from "canvas";
 
 export async function get({ params, url }) {
 	if (!params?.username) {

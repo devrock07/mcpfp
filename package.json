@@ -1,7 +1,6 @@
 {
   "name": "mcpfp",
   "version": "0.0.1",
-  "type": "module",
   "scripts": {
     "dev": "svelte-kit dev --host",
     "build": "svelte-kit build",
@@ -10,10 +9,6 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint --ignore-path .gitignore ."
-  },
-  "dependencies": {
-    "@sveltejs/adapter-node": "^1.0.0-next.70",
-    "canvas": "^3.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
@@ -33,10 +28,15 @@
     "tslib": "^2.3.1",
     "typescript": "~4.5.4"
   },
+  "type": "module",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "dependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.70",
+    "canvas": "^3.2.0"
   },
   "engines": {
     "node": "22.x"
