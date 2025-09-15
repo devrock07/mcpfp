@@ -1,0 +1,9 @@
+[build]
+  command = "npm install && npm run build"
+
+[build.environment]
+  RUSTUP_HOME = "/opt/buildhome/.rustup"
+  CARGO_HOME = "/opt/buildhome/.cargo"
+
+[[plugins]]
+  package = "netlify-plugin-rust"
