@@ -40,6 +40,6 @@
 		"skia-canvas": "^0.9.29"
 	},
 	"engines": {
-		"node": "17.4.0"
+		"node": "22.x"
 	}
 }
