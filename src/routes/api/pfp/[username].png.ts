@@ -23,7 +23,7 @@ export async function get({ params, url }) {
 		const gradient = searchParams.get("gradient");
 		const colours = gradient ? gradient.split("-").filter(v => v !== "").map(colour => `#${colour}`) : null;
 
-		const canvas = new Canvas(300, 300);
+		const canvas = createCanvas(300, 300);
 		const ctx = canvas.getContext("2d");
 		ctx.scale(16, 16)
 		ctx.imageSmoothingEnabled = false;
